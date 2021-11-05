@@ -2,7 +2,7 @@
   <section class="hello">
     <h1>&#128540;{{ componentTitle }}</h1>
      <button v-on:click="counter += 1"  class="button button-outline">Click here</button>
-     <p>Le bouton ci-dessus a été cliqué {{ counter }} fois.</p>
+     <p><span class="material-icons">thumb_up</span>{{ counter }}</p>
     <p>{{ conponenentContent }}</p>
    
    
@@ -50,6 +50,10 @@ li {
 a {
   color: #42b983;
   text-decoration: none;
+}
+p .material-icons{
+  vertical-align:  -.3rem;
+  margin-right: .3rem;
 }
 
 </style>
