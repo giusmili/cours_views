@@ -1,14 +1,31 @@
 <template>
+
   <section class="hello">
-    <h1>&#128540;{{ componentTitle }}</h1>
-     <button v-on:click="counter += 1"  class="button button-outline">Click here</button>
-     <p><span class="material-icons">thumb_up</span>{{ counter }}</p>
+     <!-- <ul>
+      <li>test</li>
+    </ul> --> 
+    <h2>
+      <span aria-hidden="true">
+        &#128540;
+      </span> 
+        {{ componentTitle }}
+      </h2>
+     <button v-on:click="counter += 1"  class="button" aria-label="button like">Click here</button>
+     <p>
+       <span 
+          class="material-icons" 
+          aria-hidden="true">
+          thumb_up
+        </span>{{ counter }}
+    </p>
     <p>{{ conponenentContent }}</p>
-   
+   <p>{{msg}}</p>
+    <!-- list -->
    
   </section>
-
 </template>
+
+
 <script>
 export default {
   name: 'HelloWorld',
@@ -16,9 +33,10 @@ export default {
   data: function(){
     return{
       componentTitle: `Hello Vue.js`,
-      conponenentContent: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat praesentium recusandae accusantium?`,
+      conponenentContent: `Approachable. Builds on top of standard HTML, CSS and JavaScript with intuitive API and world-class documentation. Performant. Truly reactive, compiler- ...`,
       display: false,
       counter: 0,
+      msg: `Personal Home Page by Giusmili`
      
 
     }
@@ -32,6 +50,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 h1{
   font-weight: normal;
 }
