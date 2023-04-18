@@ -1,7 +1,7 @@
 <template>
   <div class="home-view-component" role="region">
         <p>HomeView</p>
-</div>
+    </div>
 </template>
 
 <script>

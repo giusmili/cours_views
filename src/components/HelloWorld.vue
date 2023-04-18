@@ -1,9 +1,7 @@
 <template>
 
   <section class="hello">
-     <!-- <ul>
-      <li>test</li>
-    </ul> --> 
+  
     <h2>
       <span aria-hidden="true">
         &#128540;
@@ -30,7 +28,7 @@
 export default {
   name: 'HelloWorld',
   //function data for component value
-  data: function(){
+  data:()=>{
     return{
       componentTitle: `Hello Vue.js`,
       conponenentContent: `Approachable. Builds on top of standard HTML, CSS and JavaScript with intuitive API and world-class documentation. Performant. Truly reactive, compiler- ...`,
